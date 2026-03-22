@@ -1,0 +1,12 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding: 40px; }
+.container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 100%; max-width: 550px; }
+h1 { color: #1a1a1a; text-align: center; }
+.upload-box { border: 3px dashed #3498db; border-radius: 10px; padding: 40px; text-align: center; cursor: pointer; background: #f8fbff; transition: 0.3s; }
+.upload-box:hover { background: #eef7ff; border-color: #2980b9; }
+.btn { width: 100%; padding: 15px; margin-top: 20px; border: none; border-radius: 8px; background: #27ae60; color: white; font-weight: bold; cursor: pointer; font-size: 1rem; }
+.btn:disabled { background: #bdc3c7; cursor: not-allowed; }
+.results-grid { margin-top: 25px; display: grid; gap: 10px; }
+.card { padding: 15px; border-radius: 8px; background: #fff; border: 1px solid #ddd; border-left: 6px solid #27ae60; display: flex; justify-content: space-between; align-items: center; }
+.card.error { border-left-color: #e74c3c; background: #fff5f5; }
+.filename { font-size: 0.85rem; color: #666; max-width: 150px; overflow: hidden; text-overflow: ellipsis; }
+.prediction { font-weight: bold; color: #2c3e50; }
