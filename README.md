@@ -55,3 +55,4 @@ Error de construcción en Java: Verifique que la estructura de carpetas sea serv
 Fallo en la carga de imagen de IA: Asegúrese de que el archivo Dockerfile se encuentre en la carpeta raíz (modelo) junto con el script de despliegue.
 
 Túnel no responde: Si tras 15 segundos el script no detecta la URL, ejecute manualmente minikube service java-service --url para verificar el estado del servicio.
+Túnel no responde: Si tras 15 segundos el script no detecta la URL, ejecute manualmente minikube service java-service --url para verificar el estado del servicio.
