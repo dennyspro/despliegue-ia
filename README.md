@@ -8,15 +8,15 @@ Este ecosistema de microservicios (Java y Python) está diseñado para desplegar
 
 ### Para entornos Linux (Debian/Ubuntu)
 Debes tener instaladas las siguientes herramientas de CLI y asegurarte de que tu usuario pertenece al grupo de Docker:
-* **Docker Engine:** Motor de contenedores (\sudo apt install docker.io\).
+* **Docker Engine:** Motor de contenedores (sudo apt install docker.io).
 * **Minikube:** Orquestador local.
 * **Kubectl:** Cliente de Kubernetes.
 * **Git:** Para clonar el repositorio.
 
 ### Para entornos Windows
 * **Docker Desktop:** Configurado para usar contenedores de Linux (WSL2 recomendado).
-* **Minikube:** Instalado (ej. via \winget install minikube\).
-* **Kubectl:** Instalado y agregado al PATH (ej. via \winget install Kubernetes.kubectl\).
+* **Minikube:** Instalado (ej. via winget install minikube).
+* **Kubectl:** Instalado y agregado al PATH (ej. via winget install Kubernetes.kubectl).
 * **PowerShell:** Ejecutado en modo Administrador.
 
 ---
@@ -26,16 +26,16 @@ Debes tener instaladas las siguientes herramientas de CLI y asegurarte de que tu
 El script \desplegarLinux.sh\ es **completamente autónomo**. Detecta permisos faltantes y configura el entorno.
 
 1.  **Dar permisos de ejecución** (solo la primera vez):
-    \\\
+   
     chmod +x desplegarLinux.sh
-    \\\
+   
 2.  **Lanzar el script como usuario normal**:
-    \\\
+   
     ./desplegarLinux.sh
-    \\\
+   
 
 > [!CAUTION]
-> **NO uses \sudo\**: Ejecutar el script con \sudo\ puede corromper la configuración de Minikube. El script ajustará los permisos de la carpeta y del grupo Docker automáticamente si es necesario.
+> **NO uses sudo**: Ejecutar el script con sudo puede corromper la configuración de Minikube. El script ajustará los permisos de la carpeta y del grupo Docker automáticamente si es necesario.
 
 ---
 
@@ -43,9 +43,9 @@ El script \desplegarLinux.sh\ es **completamente autónomo**. Detecta permisos f
 
 1.  Inicia **PowerShell como Administrador**.
 2.  Navega hasta la carpeta del proyecto y ejecuta:
-    \\\powershell
+    powershell
     .\desplegarWindows.ps1
-    \\\
+    
 
 ---
 
