@@ -26,11 +26,11 @@ Debes tener instaladas las siguientes herramientas de CLI y asegurarte de que tu
 El script \desplegarLinux.sh\ es **completamente autónomo**. Detecta permisos faltantes y configura el entorno.
 
 1.  **Dar permisos de ejecución** (solo la primera vez):
-    \\\ash
+    \\\
     chmod +x desplegarLinux.sh
     \\\
 2.  **Lanzar el script como usuario normal**:
-    \\\ash
+    \\\
     ./desplegarLinux.sh
     \\\
 
