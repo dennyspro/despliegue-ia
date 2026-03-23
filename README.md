@@ -55,8 +55,8 @@ El script \desplegarLinux.sh\ es **completamente autónomo**. Detecta permisos f
 2.  **Limpieza de Recursos:** Elimina despliegues previos y libera caché de imágenes en Minikube/Docker.
 3.  **Construcción de Imágenes:** Compila Java y Python (IA) directamente en los contenedores.
 4.  **Carga Local a Minikube:** Transfiere imágenes sin necesidad de subirlas a la nube.
-5.  **Despliegue K8s:** Aplica el archivo \proyecto.yaml\.
-6.  **Configuración de Frontend:** Inyecta la URL dinámica en \web/script.js\ y abre el navegador.
+5.  **Despliegue K8s:** Aplica el archivo proyecto.yaml.
+6.  **Configuración de Frontend:** Inyecta la URL dinámica en /web/script.js y abre el navegador.
 
 ---
 
@@ -64,4 +64,4 @@ El script \desplegarLinux.sh\ es **completamente autónomo**. Detecta permisos f
 
 * **Error Exit Code 132 (Python/IA):** Ocurre si ejecutas Minikube dentro de una Máquina Virtual (ej. VirtualBox) que oculta las instrucciones AVX de la CPU a TensorFlow. Ejecuta el clúster en una máquina física (Bare Metal) o habilita el "Passthrough" de CPU en el hipervisor.
 * **Error de Docker (Permission Denied):** Si el script te añade al grupo Docker por primera vez, deja que se reinicie solo.
-* **Túnel no genera URL:** Verifica el estado de los pods con \kubectl get pods\.
+* **Túnel no genera URL:** Verifica el estado de los pods con kubectl get pods.
